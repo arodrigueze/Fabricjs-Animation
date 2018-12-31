@@ -1,0 +1,23 @@
+.suc-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .suc-message-text {
+        order: 1;
+        width: fit-content;
+        height: auto;
+        margin: 0 auto 0 auto;
+        font-size: 20px;
+    }
+    .suc-spinner{
+        order: 2;
+        height: 30px;
+        margin: 0 auto 0 auto;
+        height: 40px;
+    }
+}
+

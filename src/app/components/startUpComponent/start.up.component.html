@@ -1,1 +1,12 @@
-<div>Start Up Component</div>
+<div 
+[@closeContainer]
+class="suc-container">
+    <div 
+    [@blinkMessage]="textState" 
+    (@blinkMessage.done)="completeAnimation($event)" 
+    class="suc-message-text">{{initialMessage}}</div>
+    <img 
+    [@rotateSpinner]="spinerState" 
+    (@rotateSpinner.done)="completeAnimation($event)" 
+    class="suc-spinner" src="../../assets/icons/spinner-solid.svg">
+</div>
