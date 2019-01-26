@@ -1,10 +1,12 @@
+import { RouterModule, Routes } from '@angular/router';
+import { mainRoute, startUpRoute, summaryChartRoute } from 'src/app/const/routes';
+
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { startUpRoute, mainRoute } from 'src/app/const/routes'
 
 const routes: Routes = [
+  mainRoute,
   startUpRoute,
-  mainRoute
+  summaryChartRoute
 ];
 
 @NgModule({

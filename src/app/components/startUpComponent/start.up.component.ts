@@ -2,18 +2,17 @@ import { Component } from '@angular/core';
 import { StartUpService } from 'src/app/services/start.up.service';
 import { startUpAnimation } from 'src/app/const/start.up.component.animation';
 
-
 @Component({
-  selector: 'start-up-component',
+  selector: 'app-start-up-component',
   templateUrl: './start.up.component.html',
   styleUrls: ['./start.up.component.scss'],
   animations: [startUpAnimation.animation]
 })
 export class StartUpComponent {
 
-  private initialMessage: string = '';
-  private textState: string = 'active';
-  private spinerState: string = 'active';
+  private initialMessage = '';
+  private textState = 'active';
+  private spinerState = 'active';
 
   constructor(private startUpService: StartUpService) { }
 
